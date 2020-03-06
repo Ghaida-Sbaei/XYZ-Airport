@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script src="/js/main.js"></script>
+    <title>XYS Airport</title>
+    <form>
+        <h1>Airplane management</h1>
+        <label for="planeNameInput">Name:</label>
+        <input type="text" id="planeNameInput" placeholder="plane Name">
+        <br />
+        <label for="fuelInput">Name:</label>
+        <input type="text" id="fuelInput" placeholder="plane Name">
+        <br/>
+        <label>Choose the airport : </label>
+        <select id="airPortSelect" >
+            <option></option>
+        </select>
+        <button id="createPlaneButton" type="button">Create Plane</button><br>
+    </form>
+    <form>
+        <h2>Airport management</h2>
+        <label for="airPortNameInput">Name:</label>
+        <input type="text" id="airPortNameInput" placeholder="airport Name">
+
+        <button id="createAirPortButton" type="button">Create airport</button><br>
+    </form>
+
+
+</head>
+<body>
+<button id="getAirPort" type="button">Show Airports</button>
+<button id="getAirPlane" type="button">Show AirPlanes</button>
+<button id="refuel" type="button">refuel</button>
+<table>
+    <thead id="planeTable">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Fuel</th>
+        <th>Airport</th>
+    </tr>
+    </thead>
+    <tbody class="table table-hover"></tbody>
+</table>
+<table>
+    <thead id="airPortTable">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+
+    </tr>
+    </thead>
+    <tbody class="table table-hover"></tbody>
+</table>
+</body>
+</html>
